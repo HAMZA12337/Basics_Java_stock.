@@ -4,7 +4,7 @@ public class Ordinateur {
 
     private String nom ;
     private String marque;
-    private float prix;
+    private Double prix;
     private String description ;
     private  int nbStock ;
 
@@ -12,7 +12,7 @@ public class Ordinateur {
     // Constructeur
 
 
-    public Ordinateur(String nom, String marque, float prix, String description, int nbStock) {
+    public Ordinateur(String nom, String marque, Double  prix, String description, int nbStock) {
         this.nom = nom;
         this.marque = marque;
         this.prix = prix;
@@ -37,11 +37,11 @@ public class Ordinateur {
         this.marque = marque;
     }
 
-    public float getPrix() {
+    public Double  getPrix() {
         return prix;
     }
 
-    public void setPrix(float prix) {
+    public void setPrix(Double  prix) {
         this.prix = prix;
     }
 
@@ -63,7 +63,7 @@ public class Ordinateur {
 
 // methode de
 
-public float getPrixQte(int qte){
+public Double  getPrixQte(int qte){
 
 return prix*qte; }
 
