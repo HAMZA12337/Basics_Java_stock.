@@ -67,7 +67,8 @@ public Double  getPrixQte(int qte){
 
 return prix*qte; }
 
-
-
-
+    @Override
+   public boolean equals(Object o){
+        Ordinateur ord=(Ordinateur)o;
+    return (this.nom.equals(ord.getNom()) && this.prix==ord.getPrix() && this.marque.equals(ord.getPrix()));}
 }
